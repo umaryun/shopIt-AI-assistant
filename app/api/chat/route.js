@@ -18,9 +18,10 @@ export async function POST(req) {
   if (!projectId) {
     throw new Error('Missing GOOGLE_CLOUD_PROJECT environment variable');
   }
-
+  // Get prompt from the user
   const data = await req.json();
   const userMessage = data.message;
+ 
 
  
   // Construct the request body for Google Generative API
