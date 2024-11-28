@@ -12,7 +12,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
   ];
 
 export async function POST(req) {
-  const projectId = process.env.GEMINI_API_KEY;
+  const projectId = 'AIzaSyA2nh8X10o5gzNGEtgaZhHc-Fzh8Zx7O6Q';
   // Adjust location based on your deployment
 
   if (!projectId) {
